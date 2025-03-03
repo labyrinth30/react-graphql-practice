@@ -9,7 +9,7 @@ import People from './components/people'
 
 function App() {
 
-  const [menu, setMenu] = useState('Roles')
+  const [menu, setMenu] = useState('Teams');
 
   const client = new ApolloClient({
     uri: 'http://localhost:4000',
