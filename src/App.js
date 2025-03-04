@@ -11,8 +11,6 @@ const uri = process.env.REACT_APP_URI;
 
 function App() {
 
-  console.log(uri);
-
   const [menu, setMenu] = useState('Teams');
 
   const client = new ApolloClient({
