@@ -7,12 +7,14 @@ import Roles from './components/roles'
 import Teams from './components/teams'
 import People from './components/people'
 
+const uri = process.env.REACT_APP_URI;
+
 function App() {
 
   const [menu, setMenu] = useState('Teams');
 
   const client = new ApolloClient({
-    uri: 'http://localhost:4000',
+    uri: uri,
     cache: new InMemoryCache()
   });
 
